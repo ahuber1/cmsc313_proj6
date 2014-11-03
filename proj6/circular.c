@@ -40,8 +40,7 @@ void cbuf_delete(cbuf *cb_ptr) {
             free(&data);
         }
         
-        void * ptr = cb_ptr;
-        free(ptr);
+        free(cb_ptr);
     }
 }
 
