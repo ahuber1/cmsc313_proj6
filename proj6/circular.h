@@ -2,6 +2,7 @@
 
 #ifndef circular_h
 #define circular_h
+#define INITIAL_BUFFER_SIZE 10
 
 typedef struct {
     unsigned int time;
@@ -9,15 +10,15 @@ typedef struct {
 } quote;
 
 typedef struct {
-    int next = -1; // default value of -1
-    void data;
+    int next;
+    quote * q_ptr;
 } cbuf_data;
 
 typedef struct {
-    cbuf_data buf[];
-    unsigned int first = 0;
-    unsigned int size = 0;
-    unsigned int num = 0;
+    cbuf_data * buf;
+    unsigned int first;
+    unsigned int size;
+    unsigned int num;
 } cbuf;
 
 //Initialize a circular buffer and return a pointer that can be used to specify that circular buffer in future function calls.
