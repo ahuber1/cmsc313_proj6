@@ -24,6 +24,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A85DA011A0A59ED00B7BC1B /* TicksAll.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TicksAll.txt; sourceTree = "<group>"; };
+		1A85DA021A0A59ED00B7BC1B /* Ticks2pm.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ticks2pm.txt; sourceTree = "<group>"; };
+		1A85DA031A0A59ED00B7BC1B /* Ticks6am.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ticks6am.txt; sourceTree = "<group>"; };
 		1A8BB9B11A0826FE00F8FB5F /* proj6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = proj6; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A8BB9B41A0826FE00F8FB5F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		1A8BB9BC1A082ECA00F8FB5F /* circular.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = circular.h; sourceTree = "<group>"; };
@@ -60,6 +63,9 @@
 		1A8BB9B31A0826FE00F8FB5F /* proj6 */ = {
 			isa = PBXGroup;
 			children = (
+				1A85DA011A0A59ED00B7BC1B /* TicksAll.txt */,
+				1A85DA021A0A59ED00B7BC1B /* Ticks2pm.txt */,
+				1A85DA031A0A59ED00B7BC1B /* Ticks6am.txt */,
 				1A8BB9B41A0826FE00F8FB5F /* main.c */,
 				1A8BB9BC1A082ECA00F8FB5F /* circular.h */,
 				1A8BB9BD1A082F0000F8FB5F /* circular.c */,
@@ -238,6 +244,7 @@
 				1A8BB9BA1A0826FE00F8FB5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

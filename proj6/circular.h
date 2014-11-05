@@ -3,6 +3,7 @@
 #ifndef circular_h
 #define circular_h
 #define INITIAL_BUFFER_SIZE 10
+#define MAX_TIME_IN_SEC 300
 
 typedef struct {
     unsigned int time;
@@ -10,13 +11,9 @@ typedef struct {
 } quote;
 
 typedef struct {
-    int next;
-    quote * q_ptr;
-} cbuf_data;
-
-typedef struct {
-    cbuf_data * buf;
-    unsigned int first;
+    quote ** buf;
+    unsigned int head;
+    unsigned int tail;
     unsigned int size;
     unsigned int num;
 } cbuf;
@@ -40,7 +37,6 @@ quote *cbuf_start(cbuf *cb_ptr) ;
 quote *cbuf_end(cbuf *cb_ptr) ;
 
 //Print the contents of the circular buffer to standard output. The output should be formatted nicely and also print out the current size, maximum size and the indices of the start and end of the buffer. (See sample runs linked below.)
-
 void cbuf_dump(cbuf *cb_ptr) ;
 
 //Same as cbuf_dump() but does not print out the quotes.
